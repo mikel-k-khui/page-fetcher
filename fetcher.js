@@ -31,7 +31,7 @@ fs.access(location + fileName, fs.F_OK, (err) => {
     file = body;
     // end of requesting URL data
 
-    if (!err) { 
+    if (!err) {
       console.log(`${location}${fileName} file exists`);
       rl.question(`File already exists: do you want to overwrite? (Y/n)\n`, (answer) => {
         if (answer === "y" || answer === "Y") {
